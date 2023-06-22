@@ -41,8 +41,8 @@ export const CustomCard: React.FC<CustomCardProps> = ({
       }
       actions={[
         <Favor key="favor" filled={isFavorite} onClick={onClickFavor} />,
-        <EditOutlined rev="default" key="edit" onClick={onClickEdit} />,
-        <DeleteFilled rev="default" key="delete" onClick={onClickDelete} />,
+        <EditOutlined data-testid="id-btn-edit" rev="default" key="edit" onClick={onClickEdit} />,
+        <DeleteFilled data-testid="id-btn-delete" rev="default" key="delete" onClick={onClickDelete} />,
       ]}
     >
       <Meta title={title} description={description} />

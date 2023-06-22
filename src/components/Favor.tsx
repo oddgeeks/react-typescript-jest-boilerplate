@@ -9,9 +9,9 @@ interface FavorProps {
 
 export const Favor: React.FC<FavorProps> = ({ filled = false, color = '#eb2f96', onClick }) => {
   return (
-    <span onClick={onClick}>
-      {(filled === true && <HeartFilled rev="default" style={{ color }} />) || (
-        <HeartTwoTone rev="default" twoToneColor={color} />
+    <span data-testid="id-btn-favorite" onClick={onClick}>
+      {(filled === true && <HeartFilled data-testid="id-heart-filled" rev="default" style={{ color }} />) || (
+        <HeartTwoTone data-testid="id-heart-two-tone" rev="default" twoToneColor={color} />
       )}
     </span>
   );
