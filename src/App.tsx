@@ -3,7 +3,7 @@ import { Col, Row } from 'antd';
 import { MailOutlined, GlobalOutlined, PhoneOutlined } from '@ant-design/icons';
 
 import { CustomCard } from './components/CustomCard';
-import { EditModal } from './components/EditModal';
+import { CustomModal } from './components/CustomModal';
 import { UserType, ModalDataType } from './types';
 import { getUsers } from './services/userService';
 
@@ -124,7 +124,8 @@ const App: React.FC = () => {
           </Col>
         ))}
       </Row>
-      <EditModal
+      <CustomModal
+        title="Edit Information"
         isOpen={modalOpen}
         data={modalData}
         onCancel={() => {

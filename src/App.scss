@@ -45,5 +45,17 @@
 }
 
 .shadow {
-  box-shadow: '5px 8px 24px 5px rgba(208, 216, 243, 0.6)';
+  box-shadow: 5px 8px 24px 5px rgba(208, 216, 243, 0.6);
+}
+
+.d-block {
+  display: block!important;
+}
+
+.w-full {
+  width: 100%!important;
+}
+
+.p-20 {
+  margin: 80px;
 }
