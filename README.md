@@ -1,28 +1,23 @@
-# React | Typescript | Jest | Cypress - application boilerplate
+# React | Typescript - User List React Application
 
 It's a template for React application with Typescript, Jest library and other stuff that can be helpful for you - feel free to use it!
 
-- [React | Typescript | Jest - application boilerplate](#react--typescript--jest---application-boilerplate)
+- [React | Typescript - User List React Application](#react--typescript---user-list-react-application)
     - [Instalation steps](#instalation-steps)
     - [Available scripts](#available-scripts)
     - [Technology stack](#technology-stack)
-    - [Useful information](#useful-information)
 
 <a name="instalation" />
 
 ### Instalation steps
 
-1. Clone this repository to destination folder.
+1. Install dependencies.
 
-`git clone https://github.com/rkoziol/react-typescript-jest-boilerplate.git`
+- `npm install`
 
-2. Install dependencies.
+2. Run local environment.
 
-`npm install`
-
-3. Run local environment.
-
-`npm start`
+- `npm start`
 
 <a name="scripts" />
 
@@ -70,15 +65,3 @@ It's a template for React application with Typescript, Jest library and other st
 | <img src="https://media.istockphoto.com/vectors/cute-brown-siberian-husky-dog-sitting-cartoon-icon-vector-vector-id1238710824?k=20&m=1238710824&s=170667a&w=0&h=m4N_3us1MDDnMa-mWIGxyrYvgd9FRq0A67ziTCy7ZZw=" width='30'> | Husky | 8.0.3 | <https://github.com/typicode/husky>
 
 <a name="information" />
-
-### Useful information
-
-I focused on separate logic from presentation layer of component, so components are created according to this scheme:
-
-- **index.tsx** - main file with component declaration. You can put here a React Hooks features (eg.: useState, useEffects etc.), prepare component props, do some base logic etc. This file should return component view layer with component props set.
-- **Component.tsx** - file with view layer of component.
-- **Component.scss** - file with component style declaration.
-- **handlers.ts** - file where You can place useful function for component.
-
-Before You commit or push something on repository, Husky will run code lints and tests.
-The configuration files are in the main project folder.
